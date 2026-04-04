@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Microsoft Clarity Analytics — preserved -->
+  <!-- Microsoft Clarity Analytics -->
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "w2ojyly98y");
+    })(window, document, "clarity", "script", "w2p92upbhv");
 </script>
 
-  <title>멜라 컷 — 사전 체험단 모집 | 수면 + 체지방 + 붓기 나이트 케어</title>
+  <title>멜라 릴렉스 — 수면 사이클 올인원 케어 | 사전 체험단 모집</title>
 
   <link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
@@ -39,7 +39,7 @@
       --serif: "Cormorant Garamond","Times New Roman",serif;
       --sans:  "Pretendard Variable",Pretendard,Inter,system-ui,sans-serif;
       --ph: 24px;
-      --sec: 64px;
+      --sec: 48px;
       --max-w: 480px;
       --rsm: 8px; --rmd: 14px; --rlg: 20px; --rxl: 28px; --rfull: 999px;
     }
@@ -67,7 +67,7 @@
     .label-serif{font-family:var(--serif);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--t2)}
     .label-sans{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--t2)}
     .h2{font-size:24px;font-weight:700;line-height:1.3;letter-spacing:-.015em;color:var(--t1)}
-    .eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+    .eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:12px}
     .ey-line{width:18px;height:1px;background:var(--peach);flex-shrink:0}
 
     /* ── Buttons ── */
@@ -107,43 +107,23 @@
     ══════════════════════════════════════ */
     #hero{padding:0;background:var(--bg)}
 
-    /* ── Hero slider ── */
+    /* slider */
     .hero-slider{width:100%;overflow:hidden;position:relative;user-select:none}
-    .hero-slides{
-      display:flex;overflow-x:scroll;
-      scroll-snap-type:x mandatory;scroll-behavior:smooth;
-      -webkit-overflow-scrolling:touch;
-      scrollbar-width:none;
-    }
+    .hero-slides{display:flex;overflow-x:scroll;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none}
     .hero-slides::-webkit-scrollbar{display:none}
     .hero-slide{min-width:100%;scroll-snap-align:start;flex-shrink:0}
     .hero-slide img{width:100%;height:460px;object-fit:cover;object-position:center top;display:block}
-
-    /* ── Hero slider nav buttons ── */
-    .hero-nav{
-      position:absolute;top:50%;transform:translateY(-50%);
-      width:36px;height:36px;border-radius:50%;
-      background:rgba(255,255,255,.82);backdrop-filter:blur(6px);
-      border:1px solid rgba(0,0,0,.08);
-      display:flex;align-items:center;justify-content:center;
-      cursor:pointer;z-index:10;
-      transition:background .15s,opacity .15s;
-    }
+    .hero-nav{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.82);backdrop-filter:blur(6px);border:1px solid rgba(0,0,0,.08);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:10;transition:background .15s,opacity .15s}
     .hero-nav:active{background:rgba(255,255,255,.95)}
     .hero-nav svg{width:16px;height:16px;stroke:var(--t1);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
     .hero-nav.prev{left:12px}
     .hero-nav.next{right:12px}
     .hero-nav.hidden{opacity:0;pointer-events:none}
-
-    /* ── Hero thumbnails ── */
     .hero-thumbs{display:flex;gap:8px;padding:10px var(--ph) 0}
-    .hero-thumb{
-      width:52px;height:52px;border-radius:var(--rsm);overflow:hidden;
-      border:2px solid transparent;cursor:pointer;flex-shrink:0;
-      transition:border-color .2s,opacity .2s;opacity:.45;
-    }
+    .hero-thumb{width:52px;height:52px;border-radius:var(--rsm);overflow:hidden;border:2px solid transparent;cursor:pointer;flex-shrink:0;transition:border-color .2s,opacity .2s;opacity:.45}
     .hero-thumb.active{border-color:var(--cta);opacity:1}
     .hero-thumb img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+
     .hero-content{padding:28px var(--ph) 48px}
     .hero-name{font-size:22px;font-weight:800;letter-spacing:-.02em;color:var(--t1);line-height:1.3;margin-bottom:16px}
     .hero-bullets{list-style:none;margin-bottom:20px;display:flex;flex-direction:column;gap:7px}
@@ -170,7 +150,6 @@
     .fntext{font-size:11px;font-weight:600;color:var(--t2)}
     .review-cards{display:flex;flex-direction:column;gap:12px}
 
-    /* 리뷰 카드: 텍스트 좌, 정사각 이미지 우 */
     .rc{
       background:#fff;border:1px solid var(--border);border-radius:var(--rmd);
       display:flex;flex-direction:row;overflow:hidden;
@@ -196,65 +175,52 @@
     .rtext{font-size:15px;color:var(--t1);line-height:1.55}
 
     /* ══════════════════════════════════════
+       가짜 휴식 이유 섹션
+    ══════════════════════════════════════ */
+    #sleep-why{padding:var(--sec) var(--ph);background:var(--surface)}
+    .why-title{font-size:22px;font-weight:800;letter-spacing:-.02em;color:var(--t1);line-height:1.35;margin-bottom:18px}
+    .why-highlight{display:block;margin:16px 0;padding:14px 18px;background:var(--lav-d);color:#fff;border-radius:var(--rmd);font-size:14px;font-weight:700;line-height:1.7;letter-spacing:-.01em}
+    .why-body{font-size:15px;line-height:1.85;color:var(--t2)}
+
+    /* ══════════════════════════════════════
        POINT SECTIONS
     ══════════════════════════════════════ */
     .point-section{padding:var(--sec) var(--ph)}
-    .point-num{font-family:var(--serif);font-size:60px;font-weight:400;line-height:1;color:var(--border);letter-spacing:-.03em;margin-bottom:4px}
-    .point-title{font-size:24px;font-weight:700;line-height:1.3;letter-spacing:-.015em;color:var(--t1);margin-bottom:16px}
-    .point-body{font-size:15px;line-height:1.85;color:var(--t2)}
-    .point-body p+p{margin-top:12px}
+    .point-num{font-family:var(--serif);font-size:52px;font-weight:400;line-height:1;color:var(--border);letter-spacing:-.03em;margin-bottom:2px}
+    .point-title{font-size:24px;font-weight:700;line-height:1.3;letter-spacing:-.015em;color:var(--t1);margin-bottom:12px}
+    .point-body{font-size:15px;line-height:1.8;color:var(--t2)}
+    .point-body p+p{margin-top:10px}
 
     /* ingredient group wrapper */
-    .ingr-group{margin-top:22px}
+    .ingr-group{margin-top:16px}
     .igl{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 12px;border-radius:var(--rfull);margin-bottom:12px}
     .igl.sleep{background:var(--lavender);color:var(--lav-d)}
-    .igl.slim{background:var(--peach);color:var(--warn)}
-    .igl.edema{background:#D6EDD0;color:var(--trust)}
-    .igl.cortisol{background:#E8E4F5;color:var(--lav-d)}
+    .igl.cycle{background:#D4D0F0;color:#2E2A6E}
+    .igl.ncm{background:#C9E8E4;color:#1E5450}
 
-    /* ── 대형 성분 카드 (Potencia 스타일) ── */
-    .ig-stack{display:flex;flex-direction:column;gap:12px}
-    .ic-full{
-      background:#fff;border:1px solid var(--border);border-radius:var(--rlg);overflow:hidden;
-    }
-    .ic-full-top{
-      height:220px;overflow:hidden;
-    }
-    .ic-full-top img{
-      width:100%;height:100%;
-      object-fit:cover;
-      display:block;
-    }
-    .ic-full-body{
-      padding:20px 22px 24px;
-      border-top:1px solid var(--border);
-    }
-    .ic-full-name{
-      font-size:17px;font-weight:800;color:var(--t1);
-      line-height:1.35;margin-bottom:10px;letter-spacing:-.01em;
-    }
-    .ic-full-desc{
-      font-size:14px;color:var(--t2);line-height:1.8;
-    }
+    /* ── 대형 성분 카드 ── */
+    .ig-stack{display:flex;flex-direction:column;gap:10px}
+    .ic-full{background:#fff;border:1px solid var(--border);border-radius:var(--rlg);overflow:hidden}
+    .ic-full-top{height:220px;overflow:hidden}
+    .ic-full-top img{width:100%;height:100%;object-fit:cover;display:block}
+    .ic-full-body{padding:20px 22px 24px;border-top:1px solid var(--border)}
+    .ic-full-name{font-size:17px;font-weight:800;color:var(--t1);line-height:1.35;margin-bottom:10px;letter-spacing:-.01em}
+    .ic-full-desc{font-size:14px;color:var(--t2);line-height:1.8}
 
-    /* ── 2열 소형 카드 (코르티솔·붓기 소재) ── */
-    .ig-grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-    .ic-v{background:#fff;border:1px solid var(--border);border-radius:var(--rmd);overflow:hidden}
-    .ic-v > img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
-    .ic-v > .ic-body{padding:12px}
-
-    /* 공통 카드 텍스트 */
-    .ic-body .ic-name{font-size:13px;font-weight:700;color:var(--t1);margin-bottom:5px;line-height:1.4}
-    .ic-body .ic-desc{font-size:12px;color:var(--t2);line-height:1.65;margin-top:4px}
-    .ic-body .ic-role{font-size:11px;color:var(--t2);line-height:1.45}
+    /* stage badge inside cards */
+    .stage-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.06em;padding:3px 10px;border-radius:var(--rfull);margin-bottom:10px}
+    .s1{background:#E8E6F8;color:#3B358C}
+    .s2{background:#E3EEF7;color:#1E5A8A}
+    .s3{background:#D1EDE9;color:#1A5048}
+    .s4{background:#F3EBDA;color:#7A5020}
 
     /* ── 임상 연구 카드 ── */
     .study-card{margin-top:20px;background:#fff;border:1px solid var(--border);border-radius:var(--rlg);overflow:hidden}
-    .study-card-img{width:100%;overflow:hidden}
-    .study-card-img img{width:100%;height:auto;display:block}
     .study-card-body{padding:18px 20px 22px;border-bottom:1px solid var(--border)}
     .study-card-label{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cta);margin-bottom:10px}
     .study-card-text{font-size:13px;color:var(--t2);line-height:1.85}
+    .study-card-img{width:100%;overflow:hidden}
+    .study-card-img img{width:100%;height:auto;display:block}
 
     /* callout box */
     .callout{margin-top:20px;padding:18px 20px;background:var(--surface);border-radius:var(--rlg);border:1px solid var(--border)}
@@ -262,11 +228,11 @@
     .callout p{font-size:14px;line-height:1.8;color:var(--t2)}
     .callout strong{color:var(--t1);font-weight:700}
 
-    /* point 03 image — 1:1 크게 */
+    /* point 03 image */
     .point-img{width:100%;border-radius:var(--rxl);overflow:hidden;margin:24px 0;border:1px solid var(--border)}
     .point-img img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center;display:block}
 
-    /* ── Point 03 텍스트 카드 (이미지 없는) ── */
+    /* Point 03 텍스트 카드 */
     .text-grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
     .tc{background:var(--surface);border:1px solid var(--border);border-radius:var(--rmd);padding:16px 14px}
     .tc-name{font-size:13px;font-weight:700;color:var(--t1);margin-bottom:6px}
@@ -349,7 +315,7 @@
 <div id="sticky-cta" role="region" aria-label="빠른 신청">
   <div class="si">
     <div class="sl">
-      <div class="sl-name">멜라 컷</div>
+      <div class="sl-name">멜라 릴렉스</div>
       <div class="sl-sub">사전 체험단 모집 중 · 무료 샘플 + 40% 쿠폰</div>
     </div>
     <button class="sb" onclick="scrollToForm()">신청하기</button>
@@ -366,12 +332,12 @@
   <div class="hero-slider r" id="heroSlider">
     <div class="hero-slides" id="heroSlides">
       <div class="hero-slide">
-        <img src="images/Gemini_Generated_Image_far3mqfar3mqfar3 1.png"
-          alt="멜라 컷 제품" loading="eager" />
+        <img src="images/Gemini_Generated_Image_8eluby8eluby8elu (1) 1.png"
+          alt="멜라 릴렉스 제품" loading="eager" />
       </div>
       <div class="hero-slide">
-        <img src="images/Gemini_Generated_Image_26xegu26xegu26xe 1.png"
-          alt="멜라 컷 — 컵에 따르는 장면" loading="lazy" />
+        <img src="images/Gemini_Generated_Image_aadamdaadamdaada 1.png"
+          alt="멜라 릴렉스 — 컵에 따르는 장면" loading="lazy" />
       </div>
     </div>
     <button class="hero-nav prev hidden" id="heroPrev" aria-label="이전 이미지">
@@ -384,20 +350,21 @@
   <!-- thumbnails -->
   <div class="hero-thumbs" id="heroThumbs">
     <button class="hero-thumb active" data-idx="0" aria-label="제품 이미지">
-      <img src="images/Gemini_Generated_Image_far3mqfar3mqfar3 1.png" alt="" />
+      <img src="images/Gemini_Generated_Image_8eluby8eluby8elu (1) 1.png" alt="" />
     </button>
     <button class="hero-thumb" data-idx="1" aria-label="연출 이미지">
-      <img src="images/Gemini_Generated_Image_26xegu26xegu26xe 1.png" alt="" />
+      <img src="images/Gemini_Generated_Image_aadamdaadamdaada 1.png" alt="" />
     </button>
   </div>
 
   <div class="hero-content">
 
-    <h1 id="hero-h1" class="hero-name r">[수면·체지방 케어] 멜라 컷</h1>
+    <h1 id="hero-h1" class="hero-name r">[수면 사이클 올인원 케어] 멜라 릴렉스</h1>
 
     <ul class="hero-bullets r d1">
-      <li>편안한 밤을 만들어주는 <strong>식물성 멜라토닌 2mg</strong></li>
-      <li>자는동안 <strong>체지방·붓기 관리</strong> 배합</li>
+      <li>입면→얕은 수면→깊은 수면→렘수면→기상, <strong>단 한 포로 끝내는 전 주기 설계</strong></li>
+      <li>끊기지 않는 깊은 잠, <strong>논문 기반 Night Cycle Matrix™</strong></li>
+      <li>슈퍼푸드 7종 30kg 분량 추출 + <strong>수면 영양 11종 시너지</strong></li>
       <li>매일 먹고 싶은 <strong>상큼달달 피치 맛</strong></li>
     </ul>
 
@@ -423,7 +390,7 @@
 ══════════════════════════════════════════ -->
 <section id="reviews" aria-labelledby="review-title">
 
-  <h2 id="review-title" class="h2 r" style="margin-bottom:16px">사전 체험 고객님들의 후기</h2>
+  <h2 id="review-title" class="h2 r" style="margin-bottom:16px">🏆 사전 체험 고객님들의 '리얼' 변화</h2>
 
   <div class="frame-note r d1">
     <span class="fndot" aria-hidden="true"></span>
@@ -435,26 +402,26 @@
     <div class="rc">
       <div class="rc-body">
         <div class="rc-info">
-          <div class="rc-name">김○○ · 20대 대학원생</div>
+          <div class="rc-name">김○○ · 30대 직장인</div>
           <div class="rc-type">사전 체험단 참여자</div>
         </div>
-        <p class="rc-quote">다이어트 중이라 예민해서 잠을 설칠 때가 많았는데, 이거 먹고는 머리만 대면 자요. 다음날 붓기도 없어서 너무 좋아요</p>
+        <p class="rc-quote">그동안 먹은 건 잠만 들게 해줬는데, 이건 자고 일어났을 때 몸이 가벼운 게 달라요. 수면 사이클을 관리한다는 게 이런 거군요.</p>
       </div>
       <div class="rc-sq">
-        <img src="images/Gemini_Generated_Image_qrbf2vqrbf2vqrbf.png" alt="" loading="lazy" />
+        <img src="images/Gemini_Generated_Image_6osslb6osslb6oss.png" alt="" loading="lazy" />
       </div>
     </div>
 
     <div class="rc">
       <div class="rc-body">
         <div class="rc-info">
-          <div class="rc-name">이○○ · 30대 직장인</div>
+          <div class="rc-name">이○○ · 20대 대학원생</div>
           <div class="rc-type">사전 체험단 참여자</div>
         </div>
-        <p class="rc-quote">자기 전 한포로 잠하고 체지방까지 케어되니 좋아요! 멜라토닌 양도 매일 먹기 부담없어요</p>
+        <p class="rc-quote">멜라토닌만 먹으면 꿈이 너무 생생해서 힘들었는데, Night Cycle Matrix 덕분인지 꿈도 안 꾸고 진짜 깊게 푹 잤어요.</p>
       </div>
       <div class="rc-sq">
-        <img src="images/Gemini_Generated_Image_tab636tab636tab6.png" alt="" loading="lazy" />
+        <img src="images/Gemini_Generated_Image_sdmjyrsdmjyrsdmj.png" alt="" loading="lazy" />
       </div>
     </div>
 
@@ -464,10 +431,10 @@
           <div class="rc-name">박○○ · 20대 프리랜서</div>
           <div class="rc-type">사전 체험단 참여자</div>
         </div>
-        <p class="rc-quote">피치 맛이라 밤마다 간식 대신 먹기 좋아요. 잠의 퀄리티가 높아진것 같아서 컨디션이 좋아졌어요!</p>
+        <p class="rc-quote">함량이 높아서 약 맛이 날 줄 알았는데 그냥 맛있는 복숭아 맛이에요! 수면 사이클 전 과정을 한 번에 관리하는데 맛까지 잡았다니 대만족입니다.</p>
       </div>
       <div class="rc-sq">
-        <img src="images/Gemini_Generated_Image_z0mzouz0mzouz0mz.png" alt="" loading="lazy" />
+        <img src="images/Gemini_Generated_Image_j25eu0j25eu0j25e.png" alt="" loading="lazy" />
       </div>
     </div>
 
@@ -486,40 +453,81 @@
     <span class="label-sans">Recommended For</span>
   </div>
 
-  <h2 id="rec-title" class="h2 r d1">이런 분들께 추천드려요</h2>
+  <h2 id="rec-title" class="h2 r d1">🔍 이런 분들께 강력 추천드려요</h2>
 
   <ul class="rec-list r d2" aria-label="추천 대상">
     <li>
       <span class="rcheck" aria-hidden="true">
         <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.2 7.2L8 3" stroke="#2E2A6E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </span>
-      <span class="rtext">불규칙한 생활로 깨진 <strong>수면 패턴을 되찾고 싶은 분</strong></span>
+      <span class="rtext">잠은 드는데 금방 깨거나, <strong>오래 자도 아침에 몸이 천근만근이신 분</strong></span>
     </li>
     <li>
       <span class="rcheck" aria-hidden="true">
         <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.2 7.2L8 3" stroke="#2E2A6E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </span>
-      <span class="rtext"><strong>부작용이나 내성 걱정 없는</strong> 안전한 수면 보조제를 찾으시는 분</span>
+      <span class="rtext">단순 입면 유도를 넘어 <strong>수면 전 주기를 정밀하게 케어하고 싶은 분</strong></span>
     </li>
     <li>
       <span class="rcheck" aria-hidden="true">
         <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.2 7.2L8 3" stroke="#2E2A6E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </span>
-      <span class="rtext"><strong>다이어트로 예민해져</strong> 잠이 안 오는 분</span>
+      <span class="rtext">멜라토닌 섭취 후 <strong>악몽, 가위눌림, 기상 후 몽롱함</strong>을 경험해 보신 분</span>
     </li>
     <li>
       <span class="rcheck" aria-hidden="true">
         <svg viewBox="0 0 10 10" fill="none"><path d="M2 5L4.2 7.2L8 3" stroke="#2E2A6E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </span>
-      <span class="rtext">바쁜 일상 속, 자는 동안 <strong>간편하게 체지방 관리</strong>가 필요하신 분</span>
+      <span class="rtext">11가지 핵심 성분으로 <strong>끊기지 않는 숙면의 밀도</strong>를 원하는 분</span>
     </li>
   </ul>
 
 </section>
 
 
+<!-- cycle.png — 가짜 휴식 섹션 전 전면 이미지 -->
+<div style="width:100%;overflow:hidden">
+  <img src="images/cycle.png" alt="수면 사이클 다이어그램" style="width:100%;display:block" loading="lazy" />
+</div>
+
+
 <!-- ══════════════════════════════════════════
-     POINT 1 — 삼중 배합 (대형 성분 카드)
+     당신의 잠이 '가짜 휴식'이었던 이유
+══════════════════════════════════════════ -->
+<section id="sleep-why" aria-labelledby="why-title">
+
+  <div class="eyebrow r">
+    <span class="ey-line" aria-hidden="true"></span>
+    <span class="label-sans">Why It Matters</span>
+  </div>
+
+  <h2 id="why-title" class="why-title r d1">💤 당신의 잠이<br>'가짜 휴식'이었던 이유</h2>
+
+  <div class="r d2">
+    <p class="why-body">혹시 단순히 눈만 감고 계신가요? 진짜 휴식은</p>
+    <span class="why-highlight r d3">입면 → 얕은 수면 → 깊은 수면 → 렘수면</span>
+    <p class="why-body">으로 이어지는 수면 사이클이 톱니바퀴처럼 완벽하게 돌아갈 때 일어납니다.</p>
+  </div>
+
+  <div class="callout r d3" style="margin-top:20px">
+    <div class="callout-label">NIGHT CYCLE MATRIX™</div>
+    <p>멜라토닌 하나로는 사이클 전체를 돌릴 수 없습니다. 멜라 릴렉스는 <strong>사이클의 각 단계별로 필요한 핵심 영양 11종</strong>을 정밀하게 배치하여 '진짜 잠'의 메커니즘을 완성합니다.</p>
+  </div>
+
+</section>
+
+
+<!-- 포인트 1 전 배너 이미지 -->
+<div style="width:100%;overflow:hidden">
+  <img src="images/Group 376.png" alt="" style="width:100%;display:block" loading="lazy" />
+</div>
+<div style="width:100%;overflow:hidden">
+  <img src="images/Group 373.png" alt="" style="width:100%;display:block" loading="lazy" />
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     POINT 1 — 전 주기 수면 사이클 정밀 서포트
 ══════════════════════════════════════════ -->
 <section id="point1" class="point-section" style="background:var(--surface)" aria-labelledby="p1-title">
 
@@ -530,42 +538,61 @@
 
   <p class="point-num r d1" aria-hidden="true">01</p>
   <h2 id="p1-title" class="point-title r d1">
-    수면을 위한<br>
-    멜라토닌 + 마그네슘 + L-테아닌<br>
-    삼중 배합
+    [Main USP] 전 주기 수면 사이클<br>정밀 서포트
   </h2>
 
+  <div class="point-body r d2">
+    <p>
+      슈퍼푸드 7종 30kg 분량 추출물과 함께,<br>
+      수면의 <strong>시작부터 끝까지 단계별로 정밀 타격</strong>합니다.
+    </p>
+  </div>
+
   <div class="ingr-group r d2">
-    <span class="igl sleep">Sleep Core</span>
+    <span class="igl cycle">Sleep Cycle™</span>
     <div class="ig-stack">
 
       <div class="ic-full">
         <div class="ic-full-top">
-          <img src="images/mela.jpg" alt="식물성 타트체리 추출 멜라토닌 2mg" loading="lazy" />
+          <img src="images/mela.jpg" alt="멜라토닌 + L-트립토판" loading="lazy" />
         </div>
         <div class="ic-full-body">
-          <div class="ic-full-name">100% 식물성 타트체리 추출 멜라토닌 2mg</div>
-          <p class="ic-full-desc">내성이나 부작용 걱정 없는 안전한 식물 유래 멜라토닌으로, 다이어트로 예민해진 신경을 잠재우고 깊은 숙면을 유도합니다.</p>
+          <span class="stage-tag s1">1단계 : 입면</span>
+          <div class="ic-full-name">식물성 멜라토닌 2mg + L-트립토판</div>
+          <p class="ic-full-desc">자연스러운 수면 스위치를 켜고 입면 시간을 단축시켜 빠른 휴식 모드로 진입하게 합니다.</p>
         </div>
       </div>
 
       <div class="ic-full">
         <div class="ic-full-top">
-          <img src="images/mag.jpg" alt="마그네슘 글리시네이트 200mg" loading="lazy" />
+          <img src="images/thea.jpg" alt="마그네슘 + L-테아닌" loading="lazy" />
         </div>
         <div class="ic-full-body">
-          <div class="ic-full-name">피곤한 몸을 편안하게, 마그네슘 글리시네이트 200mg</div>
-          <p class="ic-full-desc">저가형 산화 마그네슘이 아닙니다. 근육 이완과 신경 안정에 도움을 주어 수면의 질을 높이는 '글리시네이트' 형태를 확인하세요.</p>
+          <span class="stage-tag s2">2단계 : 얕은 수면</span>
+          <div class="ic-full-name">마그네슘 200mg + L-테아닌 100mg</div>
+          <p class="ic-full-desc">긴장된 근육을 이완하고 뇌파를 안정시켜, 작은 소음에도 예민하게 반응하는 얕은 잠 단계에서 깨지 않도록 돕습니다.</p>
         </div>
       </div>
 
       <div class="ic-full">
         <div class="ic-full-top">
-          <img src="images/thea.jpg" alt="L-테아닌 100mg" loading="lazy" />
+          <img src="images/mag.jpg" alt="식물성 글리신 3000mg" loading="lazy" />
         </div>
         <div class="ic-full-body">
-          <div class="ic-full-name">스트레스를 줄여 마음을 차분하게, L-테아닌 100mg</div>
-          <p class="ic-full-desc">긴장을 완화해 마음을 차분하게 가라앉히며, 멜라토닌과 시너지를 내어 수면 지속 시간을 늘리고 다음 날 최상의 컨디션을 선사합니다.</p>
+          <span class="stage-tag s3">3단계 : 깊은 수면</span>
+          <div class="ic-full-name">식물성 글리신 3,000mg</div>
+          <p class="ic-full-desc">심부 체온을 효과적으로 낮춰 신체 회복이 실제 일어나는 '깊은 잠' 구간을 물리적으로 늘립니다.</p>
+        </div>
+      </div>
+
+      <div class="ic-full">
+        <div class="ic-full-top">
+          <img src="images/thea.jpg" alt="비타민 B군" loading="lazy" />
+        </div>
+        <div class="ic-full-body">
+          <span class="stage-tag s4">4단계 : 렘수면 &amp; 기상</span>
+          <div class="ic-full-name">비타민 B1, B6, B12</div>
+          <p class="ic-full-desc">수면 중 에너지 대사를 최적화하고 기상 후 몽롱한 잔여감을 지워, 눈 뜨는 순간 명료한 아침을 선사합니다.</p>
         </div>
       </div>
 
@@ -573,10 +600,11 @@
   </div>
 
   <div class="callout r d3">
-    <div class="callout-label">멜라 컷만의 삼중 배합</div>
+    <div class="callout-label">전 주기 완성</div>
     <p>
-      멜라토닌 단독이 아닌, <strong>L-테아닌과 마그네슘 글리시네이트를 함께</strong> 담았습니다.<br>
-      L-테아닌은 알파파 유도로 자연스러운 이완을 돕고, 마그네슘은 신경계 안정과 근육 이완으로 보다 깊은 수면을 지원합니다.
+      L-트립토판, 비타민 B1, B6, B12 등<br>
+      <strong>수면 보조를 위한 부원료까지 더해</strong><br>
+      영양제 11종류를 단 한 포에 담아냈습니다.
     </p>
   </div>
 
@@ -591,7 +619,7 @@
 
 
 <!-- ══════════════════════════════════════════
-     POINT 2 — Nightly Matrix™
+     POINT 2 — Night Cycle Matrix™
 ══════════════════════════════════════════ -->
 <section id="point2" class="point-section" style="background:var(--bg)" aria-labelledby="p2-title">
 
@@ -602,105 +630,72 @@
 
   <p class="point-num r d1" aria-hidden="true">02</p>
   <h2 id="p2-title" class="point-title r d1">
-    자는 동안<br>
-    슬리밍 케어까지<br>
-    <span style="font-size:20px;font-weight:600;letter-spacing:.01em">Nightly Matrix™</span>
+    꿈 꾸지 않고 아침까지 개운하게,<br>Night Cycle Matrix™
   </h2>
 
   <div class="point-body r d2">
     <p>
-      밤은 단순히 자는 시간이 아닙니다.<br>
-      성장호르몬이 분비되고, 세포 회복이 일어나는<br>
-      <strong>몸이 가장 활발하게 재정비되는 시간</strong>입니다.
+      멜라토닌 단독 섭취는 꿈의 비중을 높여<br>
+      기상 후 <strong>피로감을 남길 수 있습니다.</strong><br>
+      멜라 릴렉스는 논문 기반의 <strong>Night Cycle Matrix™ 배합</strong>으로<br>
+      불필요한 꿈을 줄이고 아침의 개운함을 확보합니다.
     </p>
   </div>
 
-  <!-- 체지방 케어: 잔티젠 — 대형 카드 -->
   <div class="ingr-group r d2">
-    <span class="igl slim">체지방 케어</span>
+    <span class="igl ncm">Night Cycle Matrix™</span>
     <div class="ig-stack">
+
       <div class="ic-full">
         <div class="ic-full-top">
-          <img src="images/gar.jpg" alt="잔티젠 600mg" loading="lazy" />
+          <img src="images/mela.jpg" alt="글리신 & 아피제닌" loading="lazy" />
         </div>
         <div class="ic-full-body">
-          <div class="ic-full-name">체지방 연소를 돕는 잔티젠 600mg</div>
-          <p class="ic-full-desc">미역 추출물과 석류씨 오일의 배합으로, 잠드는 동안 지방 대사가 활성화되는 공복 수면 시간에 맞춰 체지방 감소를 도울 수 있습니다.</p>
+          <div class="ic-full-name">꿈을 잠재우는 고함량 글리신 &amp; 아피제닌</div>
+          <p class="ic-full-desc">고함량 글리신(3,000mg)과 천연 아피제닌이 뇌가 꿈의 단계(REM)에 과하게 머물지 않고 깊은 잠(Non-REM)으로 빠르게 안착하도록 유도합니다. 생생한 악몽을 차단하고 잠의 농도를 높입니다.</p>
         </div>
       </div>
+
+      <div class="ic-full">
+        <div class="ic-full-top">
+          <img src="images/thea.jpg" alt="GABA 100mg" loading="lazy" />
+        </div>
+        <div class="ic-full-body">
+          <div class="ic-full-name">뇌를 진정시키는 GABA 100mg</div>
+          <p class="ic-full-desc">신경 안정 전달 물질인 가바가 수면 중 뇌의 과각성을 막아 새벽에 깨는 현상을 방어하고 숙면을 지속시킵니다.</p>
+        </div>
+      </div>
+
+      <div class="ic-full">
+        <div class="ic-full-top">
+          <img src="images/mag.jpg" alt="잔여감 없는 기상" loading="lazy" />
+        </div>
+        <div class="ic-full-body">
+          <div class="ic-full-name">잔여감 없는 깔끔한 기상</div>
+          <p class="ic-full-desc">멜라토닌의 부작용인 기상 후 몽롱함을 해결하기 위해 수면 사이클이 끝나는 시점에 맞춰 에너지를 부스팅하는 정밀 배합을 적용했습니다.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <!-- 잔티젠 임상 연구 데이터 — 붓기 케어 위로 이동 -->
-  <div class="study-card r d3" style="margin-top:20px">
+  <!-- 임상 연구 데이터 -->
+  <div class="study-card r d3">
     <div class="study-card-body">
       <div class="study-card-label">Clinical Evidence</div>
-      <p class="study-card-text">151명 대상 16주간의 무작위 이중맹검 위약대조군 연구 결과, 체중 약 4.9~5.5kg 및 체지방 약 3.5~3.6kg의 유의미한 감소가 확인되었습니다. 기초대사량(REE) 증가 및 간 지방 수치 개선 데이터가 확보된 성분으로, 수면 시간 내 에너지 소비 효율을 높이는 기전입니다.</p>
+      <p class="study-card-text">글리신 3g 투여 시 Non-REM(깊은 잠) 수면 시간을 121% 증가시키고 입면 시간을 33% 단축하여 수면 구조를 정상화합니다. GABA 100mg과 아피제닌의 시너지를 통해 뇌의 과각성을 차단하고 깊은 수면 비중을 25% 확대함으로써, 멜라토닌의 입면 효과는 유지하되 수면 중 불쾌한 각성과 꿈의 빈도를 과학적으로 낮춥니다.</p>
     </div>
     <div class="study-card-img">
-      <img src="images/cfimages.avif" alt="잔티젠 임상 연구 데이터" loading="lazy" />
+      <img src="images/glinon.png" alt="글리신 수면 임상 연구 데이터" loading="lazy" />
     </div>
   </div>
 
-  <!-- 붓기 케어: 옥수수수염 + 호박 — 2열 소형 카드 -->
-  <div class="ingr-group r d4" style="margin-top:20px">
-    <span class="igl edema">붓기 케어</span>
-    <div class="ig-grid2">
-      <div class="ic-v">
-        <img src="images/oksu.jpg" alt="옥수수수염 추출물" loading="lazy" />
-        <div class="ic-body">
-          <div class="ic-name">옥수수수염 추출물</div>
-          <p class="ic-desc">이뇨 작용으로 자는 동안 정체된 순환을 원활하게 하여 아침 부종을 완화합니다.</p>
-        </div>
-      </div>
-      <div class="ic-v">
-        <img src="images/hobak.jpg" alt="호박 추출물" loading="lazy" />
-        <div class="ic-body">
-          <div class="ic-name">호박 추출물</div>
-          <p class="ic-desc">수분 순환을 개선하고 부기를 잡아 다음 날 매끈한 컨디션을 완성합니다.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- 붓기 케어 임상 연구 데이터 -->
-  <div class="study-card r d4" style="margin-top:20px">
-    <div class="study-card-body">
-      <div class="study-card-label">Clinical Evidence</div>
-      <p class="study-card-text">옥수수수염과 호박 종자 추출물은 전임상 연구를 통해 염증성 부종 억제 및 항염 효과가 확인된 성분입니다. 특히 옥수수수염은 염증세포의 혈관 부착 인자인 CD162 발현을 조절하여 부종 완화 기전을 보였으며, 호박 종자는 용량 의존적인 부종 감소 경향을 입증하여 체내 붓기 관리의 잠재적 소재로 보고되었습니다.</p>
-    </div>
-    <div class="study-card-img">
-      <img src="images/fsbh-2-e9-g003-m.jpg" alt="붓기 케어 임상 연구 데이터" loading="lazy" />
-    </div>
-  </div>
-
-  <!-- 코르티솔 & 인슐린 밸런스 — 2열 소형 카드 -->
-  <div class="ingr-group r d5" style="margin-top:20px">
-    <span class="igl cortisol">코르티솔 · 인슐린 밸런스</span>
-    <div class="ig-grid2">
-      <div class="ic-v">
-        <img src="images/thea.jpg" alt="L-테아닌" loading="lazy" />
-        <div class="ic-body">
-          <div class="ic-name">L-테아닌 100mg</div>
-          <p class="ic-desc">스트레스 호르몬인 '코르티솔' 수치를 낮추어 복부 지방 축적을 억제합니다.</p>
-        </div>
-      </div>
-      <div class="ic-v">
-        <img src="images/mag.jpg" alt="마그네슘 글리시네이트" loading="lazy" />
-        <div class="ic-body">
-          <div class="ic-name">마그네슘 글리시네이트 200mg</div>
-          <p class="ic-desc">수면 중 인슐린 기능을 지원하고, 야간 지방 대사와 부종 관리에 도움을 줍니다.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="callout r d5">
-    <div class="callout-label">NIGHTLY MATRIX™</div>
+  <div class="callout r d3">
+    <div class="callout-label">NIGHT CYCLE MATRIX™</div>
     <p>
-      잔티젠 600mg + 옥수수수염 + 호박 추출물의 조합에<br>
-      코르티솔·인슐린 밸런스까지 더해<br>
-      <strong>잠드는 동안 체지방과 붓기를 동시에 관리</strong>하도록 설계했습니다.
+      글리신 3,000mg + GABA + 아피제닌의 조합으로<br>
+      <strong>불필요한 꿈을 줄이고</strong><br>
+      눈 뜨는 순간부터 맑고 개운한 아침을 완성합니다.
     </p>
   </div>
 
@@ -725,14 +720,14 @@
 
   <!-- 1:1 비율 크게 -->
   <div class="point-img r d2">
-    <img src="images/Gemini_Generated_Image_26xegu26xegu26xe 1.png"
-      alt="멜라 컷 리추얼 — 잔에 담긴 초미립 분말 스틱" loading="lazy" />
+    <img src="images/Gemini_Generated_Image_aadamdaadamdaada 1.png"
+      alt="멜라 릴렉스 — 잔에 담긴 초미립 분말 스틱" loading="lazy" />
   </div>
 
   <div class="text-grid2 r d3">
     <div class="tc">
       <div class="tc-name">Quick-Absorb 공법</div>
-      <p class="tc-desc">입안에서 사르르 녹는 초미립 분말로 체내에 빠르게 흡수됩니다. 즉각적인 휴식 모드로 진입하세요.</p>
+      <p class="tc-desc">핵심 영양 3,300mg 이상의 고함량이 입안에서 사르르 녹아 즉각 흡수됩니다. 물 없이 3초면 충분합니다.</p>
     </div>
     <div class="tc">
       <div class="tc-name">상큼달달한 피치맛</div>
@@ -744,7 +739,7 @@
     <div class="callout-label">ONE STICK ROUTINE</div>
     <p>
       하루 한 포로<br>
-      <strong>수면 · 체지방 · 붓기 케어</strong>를 위한 성분을 한 번에.<br>
+      <strong>11종 성분 · 슈퍼푸드 7종 30kg</strong>을 한 번에.<br>
       침대 옆에 두고, 매일 밤 자연스럽게 손이 가는 루틴을 만드세요.
     </p>
   </div>
@@ -764,35 +759,19 @@
 
   <h2 id="form-title" class="form-headline r d1">
     출시 전 가장 먼저<br>
-    멜라 컷을 만나보세요
+    멜라 릴렉스를 만나보세요
   </h2>
 
   <p class="form-body r d2">
-    자기 전 1포로 수면과 체지방을 동시에.<br>
+    자기 전 1포로 11종 고함량 성분을 한 번에.<br>
     정식 출시 전 가장 먼저 체험해보세요.
   </p>
 
   <div class="tally-wrap r d3" id="tally-form-anchor">
 
-    <!-- Tally embed — form ID: EkLAeo -->
-    <iframe
-      data-tally-src="https://tally.so/embed/EkLAeo?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-      loading="lazy" width="100%" height="1"
-      frameborder="0" marginheight="0" marginwidth="0"
-      title="멜라컷"></iframe>
-
-    <script>
-      var d=document,w="https://tally.so/widgets/embed.js",v=function(){
-        "undefined"!=typeof Tally
-          ?Tally.loadEmbeds()
-          :d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){e.src=e.dataset.tallySrc});
-      };
-      if("undefined"!=typeof Tally)v();
-      else if(d.querySelector('script[src="'+w+'"]')==null){
-        var s=d.createElement("script");
-        s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);
-      }
-    </script>
+    <!-- Tally embed — form ID: 68RGjk -->
+    <iframe data-tally-src="https://tally.so/embed/68RGjk?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="200" frameborder="0" marginheight="0" marginwidth="0" title="멜라릴렉스"></iframe>
+    <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
 
     <div class="pnrow">
       <span class="pnt">신청 시 수집한 연락처는 사전 체험단 목적으로만 사용됩니다.</span>
@@ -820,26 +799,26 @@
 
     <div class="faq-item" role="listitem">
       <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+        <span class="faq-qt">Q. 왜 멜라토닌 단독 제품보다 '수면 사이클 올인원 케어'가 중요한가요?</span>
+        <svg class="faq-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="faq-a"><div class="faq-ai">멜라토닌은 잠의 '시작'만 도와줄 뿐입니다. 중간에 깨지 않고 악몽 없이 아침까지 깊게 자려면 비렘수면(깊은 잠)을 유도하고 꿈을 안정시키는 성분이 반드시 함께 설계되어야 하기 때문입니다.</div></div>
+    </div>
+
+    <div class="faq-item" role="listitem">
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+        <span class="faq-qt">Q. 글리신 함량이 3,000mg으로 유독 높은 이유가 있나요?</span>
+        <svg class="faq-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="faq-a"><div class="faq-ai">연구 논문 데이터에 따르면 깊은 잠을 유도하고 기상 후 명료함을 주는 임상 유효 함량이 3,000mg입니다. Night Cycle Matrix™는 이 수치를 타협 없이 준수하여 개운한 아침을 실현합니다.</div></div>
+    </div>
+
+    <div class="faq-item" role="listitem">
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
         <span class="faq-qt">Q. 언제 먹는 제품인가요?</span>
         <svg class="faq-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
-      <div class="faq-a"><div class="faq-ai">취침 [ ]분 ~ [ ]시간 전에 물 한 잔과 함께 1포를 섭취하세요.</div></div>
-    </div>
-
-    <div class="faq-item" role="listitem">
-      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
-        <span class="faq-qt">Q. 멜라토닌의 부작용/내성은 없나요?</span>
-        <svg class="faq-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <div class="faq-a"><div class="faq-ai">멜라 컷의 멜라토닌은 2mg의 소량으로 설계되어 있으며, 식물성 타트체리 추출 원료를 사용했습니다. 수면제와 달리 중추신경에 직접 작용하지 않아 부작용 및 의존성 우려가 낮습니다. 다만 개인 상황에 따라 다를 수 있으니 장기 복용 전 전문가와 상담을 권장합니다.</div></div>
-    </div>
-
-    <div class="faq-item" role="listitem">
-      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
-        <span class="faq-qt">Q. 체지방 감소 효과는 바로 나타나나요?</span>
-        <svg class="faq-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <div class="faq-a"><div class="faq-ai">건강기능식품 성분의 특성상 단기간 극적인 변화보다 꾸준한 복용을 통해 점진적으로 도움이 되도록 설계된 제품입니다. 식이조절과 병행하실 때 더욱 효과적입니다. 개인에 따라 효과와 체감 시기는 다를 수 있습니다.</div></div>
+      <div class="faq-a"><div class="faq-ai">취침 30분 ~ 1시간 전에 1포를 섭취하세요.</div></div>
     </div>
 
     <div class="faq-item" role="listitem">
@@ -926,10 +905,8 @@
     var btnPrev=document.getElementById('heroPrev');
     var btnNext=document.getElementById('heroNext');
     if(!slides)return;
-
     var total=slides.children.length;
     var cur=0;
-
     function goTo(idx){
       cur=Math.max(0,Math.min(total-1,idx));
       slides.scrollTo({left:slides.offsetWidth*cur,behavior:'smooth'});
@@ -937,29 +914,17 @@
     }
     function updateUI(){
       thumbs.forEach(function(t,i){t.classList.toggle('active',i===cur)});
-      if(btnPrev) btnPrev.classList.toggle('hidden',cur===0);
-      if(btnNext) btnNext.classList.toggle('hidden',cur===total-1);
+      if(btnPrev)btnPrev.classList.toggle('hidden',cur===0);
+      if(btnNext)btnNext.classList.toggle('hidden',cur===total-1);
     }
-
-    // thumbnail click
-    thumbs.forEach(function(t){
-      t.addEventListener('click',function(){goTo(parseInt(this.dataset.idx,10))});
-    });
-
-    // nav buttons
-    if(btnPrev) btnPrev.addEventListener('click',function(){goTo(cur-1)});
-    if(btnNext) btnNext.addEventListener('click',function(){goTo(cur+1)});
-
-    // sync on scroll (swipe)
+    thumbs.forEach(function(t){t.addEventListener('click',function(){goTo(parseInt(this.dataset.idx,10))})});
+    if(btnPrev)btnPrev.addEventListener('click',function(){goTo(cur-1)});
+    if(btnNext)btnNext.addEventListener('click',function(){goTo(cur+1)});
     var timer;
     slides.addEventListener('scroll',function(){
       clearTimeout(timer);
-      timer=setTimeout(function(){
-        cur=Math.round(slides.scrollLeft/slides.offsetWidth);
-        updateUI();
-      },60);
+      timer=setTimeout(function(){cur=Math.round(slides.scrollLeft/slides.offsetWidth);updateUI()},60);
     });
-
     updateUI();
   })();
 
