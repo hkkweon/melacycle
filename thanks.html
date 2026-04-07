@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1651439229173201');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1651439229173201&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <title>신청 완료 — 멜라 릴렉스</title>
+
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:       #FBF8F2;
+      --surface:  #F5EFE6;
+      --lavender: #C5BFE5;
+      --cta:      #4F57C8;
+      --cta-h:    #3B43A8;
+      --peach:    #EDC7AF;
+      --t1:       #1F1D1B;
+      --t2:       #6B655E;
+      --border:   #E7DED3;
+      --lav-d:    #2E2A6E;
+      --serif: "Cormorant Garamond","Times New Roman",serif;
+      --sans:  "Pretendard Variable",Pretendard,Inter,system-ui,sans-serif;
+      --ph: 24px;
+      --max-w: 480px;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:var(--sans);font-size:15px;line-height:1.65;
+      color:var(--t1);background:var(--bg);
+      -webkit-font-smoothing:antialiased;
+      word-break:keep-all;overflow-wrap:break-word;
+      max-width:var(--max-w);margin:0 auto;
+      min-height:100dvh;
+      display:flex;flex-direction:column;
+    }
+
+    /* ── 메인 영역 ── */
+    .page{
+      flex:1;
+      display:flex;flex-direction:column;
+      align-items:center;justify-content:center;
+      padding:48px var(--ph);
+      text-align:center;
+    }
+
+    /* 아이콘 영역 */
+    .icon-wrap{
+      width:80px;height:80px;border-radius:50%;
+      background:var(--lavender);
+      display:flex;align-items:center;justify-content:center;
+      margin:0 auto 28px;
+    }
+    .icon-wrap svg{width:36px;height:36px;stroke:#fff;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+
+    /* 제목 */
+    .thanks-label{
+      font-family:var(--serif);
+      font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+      color:var(--t2);margin-bottom:14px;
+    }
+    .thanks-h{
+      font-size:26px;font-weight:800;letter-spacing:-.02em;
+      color:var(--t1);line-height:1.3;margin-bottom:16px;
+    }
+    .thanks-sub{
+      font-size:15px;color:var(--t2);line-height:1.8;
+      margin-bottom:36px;
+    }
+
+    /* 혜택 리스트 */
+    .benefit-list{
+      width:100%;
+      background:#fff;border:1px solid var(--border);border-radius:20px;
+      overflow:hidden;margin-bottom:36px;text-align:left;
+    }
+    .bl-item{
+      display:flex;align-items:flex-start;gap:14px;
+      padding:16px 20px;border-bottom:1px solid var(--border);
+    }
+    .bl-item:last-child{border-bottom:none}
+    .bl-dot{
+      width:22px;height:22px;border-radius:50%;
+      background:var(--lavender);flex-shrink:0;
+      display:flex;align-items:center;justify-content:center;margin-top:1px;
+    }
+    .bl-dot svg{width:11px;height:11px;stroke:var(--lav-d);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .bl-text{font-size:14px;color:var(--t1);line-height:1.55}
+    .bl-text strong{font-weight:700}
+
+    /* 안내 문구 */
+    .notice{
+      font-size:12px;color:var(--t2);line-height:1.8;
+      padding:16px 20px;background:var(--surface);
+      border-radius:14px;width:100%;text-align:left;
+    }
+
+    /* ── 푸터 ── */
+    footer{
+      padding:24px var(--ph) calc(24px + env(safe-area-inset-bottom));
+      border-top:1px solid var(--border);
+      text-align:center;
+    }
+    .foot-copy{font-size:11px;color:var(--t2)}
+
+    /* ── 애니메이션 ── */
+    @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+    .icon-wrap{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .1s both}
+    .thanks-label{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .18s both}
+    .thanks-h{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .24s both}
+    .thanks-sub{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .30s both}
+    .benefit-list{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .36s both}
+    .notice{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) .42s both}
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <div class="icon-wrap">
+      <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+
+    <p class="thanks-label">Application Complete</p>
+
+    <h1 class="thanks-h">신청해 주셔서<br>감사합니다 🌙</h1>
+
+    <p class="thanks-sub">
+      입력하신 연락처로<br>
+      사전 체험단 안내를 드리겠습니다.
+    </p>
+
+    <div class="benefit-list">
+      <div class="bl-item">
+        <span class="bl-dot">
+          <svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg>
+        </span>
+        <span class="bl-text"><strong>무료 샘플</strong> 발송 안내 예정</span>
+      </div>
+      <div class="bl-item">
+        <span class="bl-dot">
+          <svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg>
+        </span>
+        <span class="bl-text">첫 구매 <strong>40% 할인 쿠폰</strong> 지급 예정</span>
+      </div>
+      <div class="bl-item">
+        <span class="bl-dot">
+          <svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg>
+        </span>
+        <span class="bl-text"><strong>정식 출시 알림</strong> 가장 먼저 수신</span>
+      </div>
+    </div>
+
+    <p class="notice">
+      ※ 안내 연락은 영업일 기준 순차적으로 진행됩니다.<br>
+      수집된 연락처는 사전 체험단 목적으로만 사용되며,<br>
+      출시 후 1년 이내 파기됩니다.
+    </p>
+
+  </main>
+
+  <footer>
+    <p class="foot-copy">© 2026 MPL Corp. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
